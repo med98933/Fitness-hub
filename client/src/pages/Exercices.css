@@ -1,0 +1,54 @@
+.exercices-section {
+    background: #000;
+    color: #fff;
+    
+}
+
+.exercices-container {
+    max-width: 1350px;
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.exercices-container h2 {
+    margin: 0;
+}
+
+.search-bar {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.search-bar input {
+    background: transparent;
+    outline: none;
+    border: 0;
+    flex: 1;
+    font-size: 1.2rem;
+    padding: 0 15px;
+    color: #fff;
+    width: 100%;
+}
+
+.search-bar button .search-icon {
+    width: 100%;
+    font-size: 1.2rem;
+    margin-bottom: -5px;
+}
+
+.search-bar button {
+    border: 0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    opacity: 0.3;
+    cursor: pointer;
+}

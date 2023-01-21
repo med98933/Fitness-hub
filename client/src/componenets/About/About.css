@@ -1,0 +1,70 @@
+.about-container {
+    max-width: 1350px;
+    width: 90%;
+    margin-inline: auto;
+    margin-bottom: 4rem;
+}
+
+.about-container h1 {
+    text-decoration: underline;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.about-container p{
+    width: 60%;
+    font-size: 1.2rem;
+}
+
+.trainers {
+    display: flex;
+    justify-content: space-between;
+}
+
+.trainer {
+    width: 28%;
+}
+
+.trainer p {
+    font-size: 1rem;
+    width: 100%;
+}
+
+.trainer img  {
+    width: 100%;
+    border-radius: 20px;
+}
+
+h2  {
+    margin: 2rem 0;
+}
+
+@media screen and (max-width: 600px) {
+    h1, p {
+        text-align: center;
+    }
+    .about-container p {
+        margin-inline: auto;
+        width: 80%;
+    }
+    .trainers {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .trainer {
+        width: 70%;
+        margin: 1.2rem auto;
+    }
+    .trainer p {
+        text-align: left;
+        margin: 0;
+        font-size: 1rem;
+        width: 100%;
+        
+    }
+    h2 {
+        text-align: center;
+        margin: 3rem 2.5rem 0 ;
+    }
+}

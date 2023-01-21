@@ -1,0 +1,215 @@
+.hero-section {
+    background-color: #000;
+    color: #fff;
+}
+
+.hero-section-container {
+    max-width: 1350px;
+    width: 90%;
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: 40% 60%;
+    padding-top: 12.5rem;
+    margin-inline: auto;
+    padding-bottom: 60px;
+}
+
+.left h1 {
+    font-weight: 500;
+    font-size: 10.5rem;
+    line-height: 10.5rem;
+    font-style: normal;
+    letter-spacing: -2px;
+}
+
+.left p {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.8rem;
+    letter-spacing: 0.5px;
+    opacity: 0.6;
+    margin-top: 40px;
+}
+
+.left button {
+    width: 12.5rem;
+    height: 4.37rem;
+    background: #01bf71;
+    border-radius: 10px;
+    border: 0;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    color: #fff;
+    margin-top: 50px;
+}
+
+.left button:hover {
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+    color: #010606;
+    opacity: 0.9;
+}
+
+.left {
+    z-index: 100;
+}
+
+.right {
+    margin-top: -230px;
+   
+    width: 95%;
+    height: auto;
+    position: relative;
+   overflow: hidden;
+}
+
+.right img {
+    width: 100%;
+    height: auto;
+    
+}
+
+
+.rectangle {
+    width: 166px;
+    height: 105px;
+    background-color: rgb(26, 25, 25);
+    
+    border-radius: 20px;
+    
+}
+.rectangle .num-1 {
+    color: 
+    #FFE642;
+    font-weight: 600;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    line-height: 2.5rem;
+}
+
+.rectangle .num-2 {
+    color: #FB1351;
+    font-weight: 600;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    line-height: 2.5rem;
+}
+
+.rectangle .text {
+    font-weight: 400;
+    font-size: .8rem;
+    line-height: .8rem;
+    letter-spacing: 1px;
+    align-self: flex-start;
+    margin-left: 32px;
+    margin-top: 5px;
+
+}
+
+.rectangle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.rectangle-2 {
+    position: absolute;
+    top: 370px;
+    right: 90px;
+}
+
+.rectangle-1 {
+    position: absolute;
+    top: 245px;
+    right: 90px;
+}
+
+@media screen and (max-width: 1250px) {
+    .left h1 {
+        font-size: 8rem;
+    }
+    .right {
+        padding-top: 100px;
+    }
+    .rectangle {
+        width: 130px;
+        height: 80px;
+    }
+    .rectangle .num {
+        font-size: 2rem;
+    }
+    .rectangle .text {
+        font-size: 0.7rem;
+        margin-left: 25px;
+    }
+    .rectangle-1 {
+        position: absolute;
+        top: 275px;
+        right: 90px;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 920px) {
+    .left h1 {
+        font-size: 7rem;
+    }
+    .right {
+        padding-top: 170px;
+    }
+    .rectangle {
+        width: 110px;
+        height: 65px;
+    }
+    .rectangle .num {
+        font-size: 1.5rem;
+    }
+    .rectangle .text {
+        font-size: 0.6rem;
+        margin-left: 19px;
+        margin-top: 0;
+    }
+    .rectangle-1 {
+        top: 290px;
+    }
+}
+
+@media screen and (max-width: 919px) {
+    .hero-section-container {
+        grid-template-columns: 1fr;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hero-section-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .left h1 {
+        font-size: 6rem;
+        line-height: 6rem;
+    }
+    .rectangle {
+        display: none;
+    }
+    .left {
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .left h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+    .left button {
+        width: 8.5rem;
+        height: 2.87rem;
+        font-size: 1rem;
+    }
+}

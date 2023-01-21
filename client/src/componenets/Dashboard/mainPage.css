@@ -1,0 +1,126 @@
+.dashboard-section {
+    background: #000;
+    color: #fff;
+    
+   
+}
+
+.dashboard-container {
+    max-width: 1300px;
+    width: 90%;
+    margin-inline: auto;
+}
+
+.dashboard-container h3 {
+    margin: 0;
+    margin-bottom: 3rem;
+}
+
+.dashboard-container select {
+    appearance: none;
+    width: auto;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 0;
+    margin-bottom: 4rem;
+    background: rgb(182, 180, 180);
+}
+
+.dashboard-container select::-ms-expand {
+    display: none;
+}
+
+.dashboard-container button {
+    width: 12.5rem;
+    height: 4.37rem;
+    background: #01bf71;
+    border-radius: 10px;
+    border: 0;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    color: #fff;
+    margin-top: 50px;
+}
+
+.dashboard-container button:hover {
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+    color: #010606;
+    opacity: 0.9;
+}
+
+.table-container {
+    padding: 0 10%;
+    padding-bottom: 3rem ;
+}
+
+.heading {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse; 
+}
+
+.table thead {
+    background-color: #01bf71;
+}
+
+.table thead tr th {
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.35px;
+    padding: 12px;
+    vertical-align: top;
+    border: 1px solid #fff;
+}
+
+.table tbody tr td {
+    font-size: 1.1rem ;
+    letter-spacing: 0.35px;
+    
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #fff;
+}
+
+@media screen and (max-width: 786px) {
+    .table thead {
+        display: none;
+    }
+    .table, .table tbody, .table tr, .table td {
+        display: block;
+        width: 100%;
+    }
+    .table tr {
+        margin-bottom: 15px;
+    }
+    .table tbody tr td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+    .table td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: 600;
+        font-size: 14px;
+        text-align: left;
+        font-size: 1.1rem;
+    }
+    .dashboard-container {
+        text-align: center;
+        margin-inline: auto;
+    }
+}

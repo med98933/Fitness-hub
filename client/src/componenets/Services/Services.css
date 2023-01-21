@@ -1,0 +1,125 @@
+.services-container {
+    max-width: 1350px;
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7rem;
+}
+
+.ourServices {
+    background: #fff;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.service {
+    padding: 2rem;
+    border: 2px solid black;
+    border-radius: 50px;
+    width: 20%;
+    transition: all ease-in-out 0.2s;
+}
+
+.service:hover {
+    color: #fff;
+    background: #000;
+    border: 2px solid #fff;
+}
+
+.services {
+    display: flex;
+    margin-inline: auto;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 5rem;
+}
+
+.service h3 {
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 1.55rem;
+}
+
+.services-icon {
+    font-size: 3rem;
+}
+
+@media screen and (max-width: 1250px) {
+    .service {
+        width: 23%;
+        padding: 1.5rem;
+    }
+    
+}
+
+@media screen and (max-width: 1150px) {
+    .services {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-evenly;
+        gap: 2.5rem;
+        align-content: center;
+        margin-inline: auto;
+        width: 80%;
+    }
+    .service {
+        width: 80%;
+        margin-inline: auto;
+        min-height: 420px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .service {
+        width: 90%;
+        min-height: 340px;
+        margin-inline: auto;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .service {
+        width: 95%;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 685px) {
+    .services {
+        display: flex;
+        flex-direction: column;
+    }
+    .service {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .service {
+        width: 65%;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .service {
+        width: 80%;
+    }
+}

@@ -1,0 +1,107 @@
+#contact {
+    background: #000;
+    color: #fff;
+    padding: 3rem 0;
+}
+
+.contact-container {
+    max-width: 1350px;
+    width: 58%;
+    display: grid;
+    grid-template-columns: 37% 58%;
+    gap: 12%;
+    margin-inline: auto;
+}
+
+.hd {
+    text-align: center;
+    margin: 2rem;
+}
+
+.contact-options {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.contact-option {
+    background: rgb(24, 23, 23);
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    border: 2px solid gray;
+    text-align: center;
+    box-sizing: border-box;
+    transition: all ease-in-out 0.2s;
+    overflow-wrap: break-word;
+}
+
+.contact-option a {
+    text-decoration: none;
+    color: #fff;
+    margin-top: 0.7rem;
+    font-size: 0.9rem;
+    display: inline-block;
+}
+
+.contact-option a:hover {
+    color: #01bf71;
+}
+
+.contact-option .contact-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-option:hover {
+    background: transparent;
+}
+
+form button {
+    width: 10.5rem;
+    height: 3.37rem;
+    background: #01bf71;
+    border-radius: 10px;
+    border: 0;
+    font-size: 1rem;
+    line-height: 1rem;
+    letter-spacing: 1px;
+    color: #fff;
+    margin-top: 10px;
+    
+}
+
+form button:hover {
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+    color: #010606;
+    opacity: 0.9;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+input, textarea {
+    width:100%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: rgb(24, 23, 23);
+    border: 2px solid gray;
+    color: #fff;
+    resize: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contact-container {
+        width: 80%
+    }
+}
